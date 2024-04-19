@@ -50,22 +50,24 @@
 }
 .delete {
     border: none;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid transparent;
     background-color: white;
     visibility: hidden;
+    cursor: pointer;
 }
 .delete p {
     padding: 3px 4px;
     font-weight: 500;
+}
+.delete:hover {
+    /* background-color: rgba(230, 229, 229, 0.477); */
+    border-bottom: 1px solid black;
 }
 .card:hover {
     border: 1px solid black;
 }
 .card:hover .delete {
     visibility: visible;
-}
-.delete:hover {
-    background-color: rgba(230, 229, 229, 0.477);
 }
 .addBook {
     width: 220px;
@@ -84,8 +86,54 @@
     border-radius: 50%;
     padding: 4px 17px;
     background-color: transparent;
+    cursor: pointer;
 }
 .addBook:hover .addBtn {
     border: 1px solid black;
     color: black;
 }
+/* Dialog */
+.bookDialog {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 300px;
+    width: 50%;
+    width: 400px;
+    height: 190px;
+    border: 2px solid black;
+}
+.dialorInnerPart {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.closeDialog {
+    position: relative;
+    right: -95%;
+    margin: 10px 0;
+    font-size: 18px;
+    background-color: white;
+    border: 1px solid black;
+    padding: 1px 4px;
+}
+.formDialog div {
+    margin: 5px 0;
+}
+.submitDialogForm {  
+    margin: 10px 0;
+    background-color: white;
+    border: 1px solid black;
+    font-size: 16px;
+    padding: 3px 5px;
+    cursor: pointer;
+}
+.submitDialogForm:hover, .closeDialog:hover {
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+}
+::backdrop {
+    background-color: gray;
+    opacity: 0.5;
+  }
