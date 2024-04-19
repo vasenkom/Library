@@ -1,4 +1,18 @@
 const myLibrary = [];
+const dialogWindow = document.querySelector(".bookDialog");
+const showDialogButton = document.querySelector(".addBtn");
+const closeDialogButton = document.querySelector(".closeDialog");
+const submitDialogForm = document.querySelector(".submitDialogForm");
+
+//open the dialog
+showDialogButton.addEventListener("click", () => {
+    dialogWindow.showModal();
+});
+  
+//close the dialog
+closeDialogButton.addEventListener("click", () => {
+    dialogWindow.close();
+});
 
 function Book() {
     this.author = author;
