@@ -3,6 +3,9 @@ const dialogWindow = document.querySelector(".bookDialog");
 const showDialogButton = document.querySelector(".addBtn");
 const closeDialogButton = document.querySelector(".closeDialog");
 const submitDialogForm = document.querySelector(".submitDialogForm");
+const deleteBook = document.querySelector(".delete");
+const cardBook = document.querySelector(".card")
+
 
 //open the dialog
 showDialogButton.addEventListener("click", () => {
@@ -13,6 +16,17 @@ showDialogButton.addEventListener("click", () => {
 closeDialogButton.addEventListener("click", () => {
     dialogWindow.close();
 });
+
+// delete (remove) the book
+deleteBook.addEventListener("click", function() {
+    cardBook.style.display = "none";
+})
+
+submitDialogForm.addEventListener("submit", function(event) {
+    event.preventDefault();
+    addBookToLibrary();
+    dialogWindow.close();
+})
 
 function Book() {
     this.author = author;
@@ -27,16 +41,16 @@ function addBookToLibrary() {
 
     const imgJS = document.createElement("img");
     imgJS.classList.add("imgBook");
-    imgJS.src = imgInputSRC;
+    imgJS.src = document.querySelector("#imgInput").value;
     cardJS.appendChild(imgJS);
 
     const nameJS = document.createElement("p");
-    nameJS.textContent = nameInputText;
+    nameJS.textContent = document.querySelector("#nameInput").value;
     nameJS.classList.add("name");
     cardJS.appendChild(nameJS);
 
     const authorJS = document.createElement("p");
-    authorJS.textContent = authorInputText;
+    authorJS.textContent = document.querySelector("#autorInput").value;
     authorJS.classList.add("author");
     cardJS.appendChild(authorJS);
 }
