@@ -23,10 +23,18 @@ deleteBookButtons.forEach((deleteBookButton) => {
     })
 })
 
-function Books(name, author, img) {
-    this.name = name;
-    this.author = author;
-    this.img = img;
+// function Books(name, author, img) {
+//     this.name = name;
+//     this.author = author;
+//     this.img = img;
+// }
+
+class Books {
+    constructor (name, author, img) {
+        this.name = name;
+        this.author = author;
+        this.img = img;
+    }
 }
 
 //press submit to add to the main page
@@ -50,7 +58,6 @@ submitDialogFormButton.addEventListener("click", function(event) {
 
 function addBookToMainPage() {
     const cardHolder = document.querySelector(".cardHolder");
-    let bookCounter = 0;
     cardHolder.textContent = '';
 
     myLibrary.forEach((book) => {
