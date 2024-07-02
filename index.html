@@ -44,15 +44,33 @@
           <form class="formDialog">
             <div>
               <label for="imgInput">Img url:</label>
-              <input type="text" name="imgInput" id="imgInput" />
+              <input
+                type="text"
+                name="imgInput"
+                id="imgInput"
+                required
+                minlength="5"
+              />
             </div>
             <div>
               <label for="nameInput">Name of the book:</label>
-              <input type="text" name="nameInput" id="nameInput" />
+              <input
+                type="text"
+                name="nameInput"
+                id="nameInput"
+                required
+                minlength="1"
+              />
             </div>
             <div>
               <label for="autorInput">Author:</label>
-              <input type="text" name="autorInput" id="autorInput" />
+              <input
+                type="text"
+                name="autorInput"
+                id="autorInput"
+                required
+                minlength="1"
+              />
             </div>
             <button type="submit" class="submitDialogForm">Submit</button>
           </form>

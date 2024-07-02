@@ -146,6 +146,16 @@ input[type="checkbox"] {
 .formDialog div {
   margin: 5px 0;
 }
+input:invalid {
+  box-shadow: 0 0 1px 1px red;
+}
+input:valid {
+  box-shadow: 0 0 1px 1px green;
+}
+
+input:focus:invalid {
+  box-shadow: none;
+}
 .submitDialogForm {
   margin: 10px 0;
   background-color: white;
