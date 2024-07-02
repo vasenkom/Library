@@ -1,61 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Library</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Space+Grotesk">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Space+Grotesk"
+    />
+  </head>
+  <body>
     <div class="header">
-        <h1>LIBRARY</h1>
+      <h1>LIBRARY</h1>
     </div>
     <div class="description">
-        The Library app is a tool for organizing your favorite books. Add name, author, and mark them as read or unread. <br>Simplify book management and rediscover your love for reading with ease.
+      The Library app is a tool for organizing your favorite books. Add name,
+      author, and mark them as read or unread. <br />Simplify book management
+      and rediscover your love for reading with ease.
     </div>
     <div class="main">
+      <div class="card">
+        <button class="delete"><p>remove</p></button>
+        <img
+          src="https://lwcurrey.cdn.bibliopolis.com/pictures/152793.jpg?auto=webp&v=1682009587"
+          class="imgBook"
+          alt="book"
+        />
+        <p class="name" id="name">Twilight</p>
+        <p class="author" id="author">Stephenie Meyer</p>
+        <div class="readStatusDIV">
+          <label for="readStatus">read</label>
+          <input type="checkbox" id="readStatus" />
+        </div>
+      </div>
 
-        <div class="card">
-            <button class="delete"><p>remove</p></button>
-            <img src="https://lwcurrey.cdn.bibliopolis.com/pictures/152793.jpg?auto=webp&v=1682009587" class="imgBook" alt="book">
-            <p class="name" id="name">Twilight</p>
-            <p class="author" id="author">Stephenie Meyer</p>
-            <div class="readStatusDIV">
-                <label for="readStatus">read</label>
-                <input type="checkbox" id="readStatus">
+      <div class="cardHolder"></div>
+
+      <dialog class="bookDialog">
+        <div class="dialorInnerPart">
+          <button autofocus class="closeDialog">x</button>
+          <h4>Add your book</h4>
+          <form class="formDialog">
+            <div>
+              <label for="imgInput">Img url:</label>
+              <input
+                type="text"
+                name="imgInput"
+                id="imgInput"
+                required
+                minlength="5"
+              />
             </div>
+            <div>
+              <label for="nameInput">Name of the book:</label>
+              <input
+                type="text"
+                name="nameInput"
+                id="nameInput"
+                required
+                minlength="1"
+              />
+            </div>
+            <div>
+              <label for="autorInput">Author:</label>
+              <input
+                type="text"
+                name="autorInput"
+                id="autorInput"
+                required
+                minlength="1"
+              />
+            </div>
+            <button type="submit" class="submitDialogForm">Submit</button>
+          </form>
         </div>
+      </dialog>
 
-        <div class="cardHolder">
-            
-
-        </div>
-        
-        <dialog class="bookDialog">
-                <div class="dialorInnerPart">
-                    <button autofocus class="closeDialog">x</button>
-                    <h4>Add your book</h4>
-                <form class="formDialog">
-                    <div>
-                        <label for="imgInput">Img url:</label>
-                        <input type="text" name="imgInput" id="imgInput">
-                    </div>
-                    <div>
-                        <label for="nameInput">Name of the book:</label>
-                        <input type="text" name="nameInput" id="nameInput">
-                    </div>
-                    <div>
-                        <label for="autorInput">Author:</label>
-                        <input type="text" name="autorInput" id="autorInput">
-                    </div>
-                    <button type="submit" class="submitDialogForm">Submit</button>
-                </form>
-                </div>
-        </dialog>
-        
-        <button class="addBtn">+</button>
+      <button class="addBtn">+</button>
     </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
