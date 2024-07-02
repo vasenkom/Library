@@ -1,165 +1,176 @@
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: "Space Grotesk", sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Space Grotesk", sans-serif;
 }
 .header {
-    width: 85%;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
+  width: 85%;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .header h1 {
-    font-size: 50px;
+  font-size: 50px;
 }
 .description {
-    width: 85%;
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
+  width: 85%;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
 }
 .main {
-    width: 85%;
-    margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 30px
+  width: 85%;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 }
 .cardHolder {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 30px
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 }
 .card {
-    visibility: visible;
-    border: 1px solid transparent;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 15px 30px;
-    /* margin-right: 15px; */
+  visibility: visible;
+  border: 1px solid transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 30px;
+  /* margin-right: 15px; */
 }
 .card img {
-    width: 220px;
-    height: 320px;
-    margin: 15px 0;
+  width: 220px;
+  height: 320px;
+  margin: 15px 0;
 }
 .name {
-    font-size: 20px;
-    font-weight: 600;
+  font-size: 20px;
+  font-weight: 600;
 }
 .author {
-    font-size: 18px;
-    margin-bottom: 10px;
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 .readStatusDIV {
-    font-size: 17px;
+  font-size: 17px;
 }
 input[type="checkbox"] {
-    accent-color: black;
-  }
-  
+  accent-color: black;
+}
+
 .delete {
-    border: none;
-    border-bottom: 1px solid transparent;
-    background-color: white;
-    visibility: hidden;
-    cursor: pointer;
+  border: none;
+  border-bottom: 1px solid transparent;
+  background-color: white;
+  visibility: hidden;
+  cursor: pointer;
 }
 .delete p {
-    padding: 3px 4px;
-    font-weight: 500;
+  padding: 3px 4px;
+  font-weight: 500;
 }
 .delete:hover {
-    /* background-color: rgba(230, 229, 229, 0.477); */
-    border-bottom: 1px solid black;
+  /* background-color: rgba(230, 229, 229, 0.477); */
+  border-bottom: 1px solid black;
 }
 .card:hover {
-    border: 1px solid black;
+  border: 1px solid black;
 }
 .card:hover .delete {
-    visibility:visible;
+  visibility: visible;
 }
 .addBook {
-    width: 220px;
-    height: 423px;
-    border: 1px solid transparent;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  width: 220px;
+  height: 423px;
+  border: 1px solid transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .addBtn {
-    text-align: center;
-    font-size: 40px;
-    border: 1px solid rgb(150, 149, 149);
-    color: rgb(150, 149, 149);
-    border-radius: 50%;
-    padding: 4px 17px;
-    background-color: transparent;
-    cursor: pointer;
+  text-align: center;
+  font-size: 40px;
+  border: 1px solid rgb(150, 149, 149);
+  color: rgb(150, 149, 149);
+  border-radius: 50%;
+  padding: 4px 17px;
+  background-color: transparent;
+  cursor: pointer;
 }
 .addBtn:hover {
-    border: 1px solid black;
-    color: black;
+  border: 1px solid black;
+  color: black;
 }
 /* Dialog */
 .bookDialog {
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 300px;
-    width: 50%;
-    width: 400px;
-    height: 190px;
-    border: 2px solid black;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 300px;
+  width: 50%;
+  width: 400px;
+  height: 190px;
+  border: 2px solid black;
 }
 .bookDialog h4 {
-    margin-top: 20px;
-    margin-bottom: 15px;
+  margin-top: 20px;
+  margin-bottom: 15px;
 }
 .dialorInnerPart {
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .closeDialog {
-    position: absolute;
-    right: 3%;
-    top: 5%;
-    font-size: 18px;
-    background-color: white;
-    border: 1px solid black;
-    padding: 1px 4px;
+  position: absolute;
+  right: 3%;
+  top: 5%;
+  font-size: 18px;
+  background-color: white;
+  border: 1px solid black;
+  padding: 1px 4px;
 }
 .formDialog div {
-    margin: 5px 0;
+  margin: 5px 0;
 }
-.submitDialogForm {  
-    margin: 10px 0;
-    background-color: white;
-    border: 1px solid black;
-    font-size: 16px;
-    padding: 3px 5px;
-    cursor: pointer;
+input:invalid {
+  box-shadow: 0 0 1px 1px red;
 }
-.submitDialogForm:hover, .closeDialog:hover {
-    color: white;
-    background-color: black;
-    border: 1px solid white;
+input:valid {
+  box-shadow: 0 0 1px 1px green;
+}
+
+input:focus:invalid {
+  box-shadow: none;
+}
+.submitDialogForm {
+  margin: 10px 0;
+  background-color: white;
+  border: 1px solid black;
+  font-size: 16px;
+  padding: 3px 5px;
+  cursor: pointer;
+}
+.submitDialogForm:hover,
+.closeDialog:hover {
+  color: white;
+  background-color: black;
+  border: 1px solid white;
 }
 ::backdrop {
-    background-color: gray;
-    opacity: 0.5;
-  }
+  background-color: gray;
+  opacity: 0.5;
+}
